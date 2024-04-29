@@ -304,7 +304,7 @@ void AGameField::ResetField()
 		PlayerController->HUDChess->OtherNotationComponents.Empty();
 
 		PlayerController->HUDChess->Canvas->ClearChildren();
-;		
+
 		PlayerController->HUDChess->ScrollBox->ScrollToStart();
 		
 	}

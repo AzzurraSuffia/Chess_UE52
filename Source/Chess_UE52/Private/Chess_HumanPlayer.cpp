@@ -260,6 +260,10 @@ void AChess_HumanPlayer::OnPawnPromotion()
 		{
 			GameMode->TurnNextPlayer();
 		}
+		else
+		{
+			GameMode->ChessBoard->TileMap[GameMode->ChessBoard->BlackKing->PlaceAt]->SetTileColor(4);
+		}
 	}
 }
 
@@ -472,6 +476,10 @@ void AChess_HumanPlayer::OnClick()
 						if (!MoveResult)
 						{
 							GameMode->TurnNextPlayer();
+						}
+						else
+						{
+							GameMode->ChessBoard->TileMap[GameMode->ChessBoard->BlackKing->PlaceAt]->SetTileColor(4);
 						}
 					}
 					else
