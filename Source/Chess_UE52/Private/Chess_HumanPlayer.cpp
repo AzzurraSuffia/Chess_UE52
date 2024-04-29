@@ -210,6 +210,9 @@ void AChess_HumanPlayer::OnPawnPromotion()
 
 		GameMode->bpromotionFlag = true;
 
+		//human player cannot move anymore, he just have to choose the new piece
+		bisMyTurn = false;
+
 		//show pawn promotion menu
 		OnPromotionFlagTrue.Broadcast();
 	}
