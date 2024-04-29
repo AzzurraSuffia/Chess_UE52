@@ -6,6 +6,8 @@ Sono state implementate come funzionalità aggiuntive la presa En Passant e lo S
 
 Note sul progetto:
 - Per lo storico delle mosse è stata utilizzata la Long Algebraic Notation.
+- Se la partita termina con uno scacco matto, cliccando sul pulsante 'Restart' sarà possibile ricominciare a giocare. Iniziata una nuova partita, per vedere le nuove mosse potrebbe essere
+  necessario trascinare completamente verso l'alto la barra dello storico dello mosse. Se la partita termina con uno stallo, dopo 3 secondi verrà in automatico generata una nuova partita. 
 - Cliccando sui bottoni presenti nello storico delle mosse, lo stato della scacchiera viene modificato ritornando alla configurazione in cui la mossa cliccata era l'ultima ad essere 
   stata eseguita. Per poter riprendere la partita da quel punto (replay) muovere un pezzo se è il proprio turno. Nel caso in cui la mossa cliccata non fosse dell'avversario, non verrà 
   data l'opportunità di muovere i pezzi. 
