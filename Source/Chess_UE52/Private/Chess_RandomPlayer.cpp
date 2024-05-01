@@ -212,7 +212,7 @@ void AChess_RandomPlayer::OnTurn()
 				if (IsValid(PlayerController))
 				{
 					UUI_MoveBox* MoveBox = PlayerController->HUDChess->AddMoveWidget(RandomMove);
-					//PlayerController->HUDChess->ScrollBox->ScrollToEnd();
+					PlayerController->HUDChess->ScrollBox->ScrollToEnd();
 					MoveBox->Move = RandomMove;
 				}
 

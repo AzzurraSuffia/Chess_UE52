@@ -197,14 +197,14 @@ void UMove::UndoMove(AChess_GameMode* GameMode)
 
 	//relocate the piece moved
 	FVector Location = GameMode->ChessBoard->GetRelativeLocationByXYPosition(PieceMoving->PlaceAt.X, PieceMoving->PlaceAt.Y);
-	FVector NewLocation = Location + FVector(6, 6, 20);
+	FVector NewLocation = Location + FVector(6, 6, 30);
 	PieceMoving->SetActorLocation(NewLocation);
 
 	//in case of capture, show the piece captured
 	if (bisCapture)
 	{
 		Location = GameMode->ChessBoard->GetRelativeLocationByXYPosition(PieceCaptured->PlaceAt.X, PieceCaptured->PlaceAt.Y);
-		NewLocation = Location + FVector(6, 6, 20);
+		NewLocation = Location + FVector(6, 6, 30);
 		PieceCaptured->SetActorLocation(NewLocation);
 		PieceCaptured->SetActorHiddenInGame(false);
 	} 
@@ -212,7 +212,7 @@ void UMove::UndoMove(AChess_GameMode* GameMode)
 	else if (benPassant)
 	{
 		Location = GameMode->ChessBoard->GetRelativeLocationByXYPosition(PieceCaptured->PlaceAt.X, PieceCaptured->PlaceAt.Y);
-		NewLocation = Location + FVector(6, 6, 20);
+		NewLocation = Location + FVector(6, 6, 30);
 		PieceCaptured->SetActorLocation(NewLocation);
 		PieceCaptured->SetActorHiddenInGame(false);
 	}
@@ -285,7 +285,7 @@ void UMove::doMove(AChess_GameMode* GameMode)
 
 	//relocate the piece moved
 	FVector Location = GameMode->ChessBoard->GetRelativeLocationByXYPosition(PieceMoving->PlaceAt.X, PieceMoving->PlaceAt.Y);
-	FVector NewLocation = Location + FVector(6, 6, 20);
+	FVector NewLocation = Location + FVector(6, 6, 30);
 	PieceMoving->SetActorLocation(NewLocation);
 
 	//in case of capture, hide the piece captured and move it out of chessboard
@@ -320,7 +320,7 @@ void UMove::doMove(AChess_GameMode* GameMode)
 		PiecePromoted->PlaceAt = PieceMoving->PlaceAt;
 		GameMode->ChessBoard->MoveOutOfChessBoard(PieceMoving);
 		Location = GameMode->ChessBoard->GetRelativeLocationByXYPosition(PiecePromoted->PlaceAt.X, PiecePromoted->PlaceAt.Y);
-		NewLocation = Location + FVector(6, 6, 20);
+		NewLocation = Location + FVector(6, 6, 30);
 		PiecePromoted->SetActorLocation(NewLocation);
 		PiecePromoted->SetActorHiddenInGame(false);
 		PieceMoving->SetActorHiddenInGame(true);

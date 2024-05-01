@@ -27,13 +27,13 @@ void ChangeTileStatus(EColor Color, const double InX, const double InY, AGameFie
 ARookPiece* AGameField::SpawnPieceRook(EColor Color, const double InX, const double InY, const float TileScale) {
 
 	//spawn a rook in the location passed as argument
-	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 20));
+	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 30));
 	ChangeTileStatus(Color, InX, InY, this);
 	ARookPiece* Obj = GetWorld()->SpawnActor<ARookPiece>(RookClass, Location, RotationPiece);
 
 	//set piece scale
 	const float PieceScale = (TileScale * 0.7);
-	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.2));
+	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.002));
 
 	//set piece attributes
 	Obj->PieceColor = Color;
@@ -47,13 +47,13 @@ ARookPiece* AGameField::SpawnPieceRook(EColor Color, const double InX, const dou
 AKnightPiece* AGameField::SpawnPieceKnight(EColor Color, const double InX, const double InY, const float TileScale) {
 
 	//spawn a knight in the location passed as argument
-	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 20));
+	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 30));
 	ChangeTileStatus(Color, InX, InY, this);
 	AKnightPiece* Obj = GetWorld()->SpawnActor<AKnightPiece>(KnightClass, Location, RotationPiece);
 
 	//set piece scale
 	const float PieceScale = (TileScale * 0.7);
-	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.2));
+	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.002));
 
 	//set piece attributes
 	Obj->PieceColor = Color;
@@ -66,13 +66,13 @@ AKnightPiece* AGameField::SpawnPieceKnight(EColor Color, const double InX, const
 ABishopPiece* AGameField::SpawnPieceBishop(EColor Color, const double InX, const double InY, const float TileScale) {
 
 	//spawn a bishop in the location passed as argument
-	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 20));
+	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 30));
 	ChangeTileStatus(Color, InX, InY, this);
 	ABishopPiece* Obj = GetWorld()->SpawnActor<ABishopPiece>(BishopClass, Location, RotationPiece);
 
 	//set piece scale
 	const float PieceScale = (TileScale * 0.7);
-	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.2));
+	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.002));
 
 	//set piece attributes
 	Obj->PieceColor = Color;
@@ -85,13 +85,13 @@ ABishopPiece* AGameField::SpawnPieceBishop(EColor Color, const double InX, const
 AQueenPiece* AGameField::SpawnPieceQueen(EColor Color, const double InX, const double InY, const float TileScale) {
 
 	//spawn a queen in the location passed as argument
-	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 20));
+	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 30));
 	ChangeTileStatus(Color, InX, InY, this);
 	AQueenPiece* Obj = GetWorld()->SpawnActor<AQueenPiece>(QueenClass, Location, RotationPiece);
 
 	//set piece scale
 	const float PieceScale = (TileScale * 0.7);
-	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.2));
+	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.002));
 
 	//set piece attributes
 	Obj->PieceColor = Color;
@@ -104,13 +104,13 @@ AQueenPiece* AGameField::SpawnPieceQueen(EColor Color, const double InX, const d
 AKingPiece* AGameField::SpawnPieceKing(EColor Color, const double InX, const double InY, const float TileScale) {
 
 	//spawn a king in the location passed as argument
-	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 20));
+	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale*5, TileScale*5, 30));
 	ChangeTileStatus(Color, InX, InY, this);
 	AKingPiece* Obj = GetWorld()->SpawnActor<AKingPiece>(KingClass, Location, RotationPiece);
 
 	//set piece scale
 	const float PieceScale = (TileScale * 0.7);
-	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.2));
+	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.002));
 
 	//set piece attributes
 	Obj->PieceColor = Color;
@@ -123,13 +123,13 @@ AKingPiece* AGameField::SpawnPieceKing(EColor Color, const double InX, const dou
 APawnPiece* AGameField::SpawnPiecePawn(EColor Color, const double InX, const double InY, const float TileScale) {
 
 	//spawn a pawn in the location passed as argument
-	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale * 5, TileScale * 5, 20));
+	FVector Location = (AGameField::GetRelativeLocationByXYPosition(InX, InY) + FVector(TileScale * 5, TileScale * 5, 30));
 	ChangeTileStatus(Color, InX, InY, this);
 	APawnPiece* Obj = GetWorld()->SpawnActor<APawnPiece>(PawnClass, Location, RotationPiece);
 
 	//set piece scale
 	const float PieceScale = (TileScale * 0.7);
-	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.2));
+	Obj->SetActorScale3D(FVector(PieceScale, PieceScale, 0.002));
 
 	//set piece attributes
 	Obj->PieceColor = Color;

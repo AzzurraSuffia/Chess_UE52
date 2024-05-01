@@ -87,7 +87,7 @@ void AChess_MinimaxPlayer::OnTurn()
 				if (IsValid(PlayerController))
 				{
 					UUI_MoveBox* MoveBox = PlayerController->HUDChess->AddMoveWidget(BestMove);
-					//PlayerController->HUDChess->ScrollBox->ScrollToEnd();
+					PlayerController->HUDChess->ScrollBox->ScrollToEnd();
 					MoveBox->Move = BestMove;
 				}
 

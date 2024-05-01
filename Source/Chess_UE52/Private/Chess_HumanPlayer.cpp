@@ -254,7 +254,7 @@ void AChess_HumanPlayer::OnPawnPromotion()
 		if (IsValid(PlayerController))
 		{
 			UUI_MoveBox* MoveBox = PlayerController->HUDChess->AddMoveWidget(GameMode->ChessBoard->MoveStack.Last());
-			//PlayerController->HUDChess->ScrollBox->ScrollToEnd();
+			PlayerController->HUDChess->ScrollBox->ScrollToEnd();
 			MoveBox->Move = GameMode->ChessBoard->MoveStack.Last();
 		}
 
@@ -471,7 +471,7 @@ void AChess_HumanPlayer::OnClick()
 						if (IsValid(PlayerController))
 						{
 							UUI_MoveBox* MoveBox = PlayerController->HUDChess->AddMoveWidget(GameMode->ChessBoard->MoveStack.Last());
-							//PlayerController->HUDChess->ScrollBox->ScrollToEnd();
+							PlayerController->HUDChess->ScrollBox->ScrollToEnd();
 							MoveBox->Move = GameMode->ChessBoard->MoveStack.Last();
 						}
 
@@ -607,7 +607,7 @@ void AChess_HumanPlayer::OnClick()
 							if (IsValid(PlayerController))
 							{
 								UUI_MoveBox* MoveBox = PlayerController->HUDChess->AddMoveWidget(GameMode->ChessBoard->MoveStack.Last());
-								//PlayerController->HUDChess->ScrollBox->ScrollToEnd();
+								PlayerController->HUDChess->ScrollBox->ScrollToEnd();
 								MoveBox->Move = GameMode->ChessBoard->MoveStack.Last();
 							}
 

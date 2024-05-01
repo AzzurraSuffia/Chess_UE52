@@ -240,7 +240,7 @@ void AChess_GameMode::MovePiece(AChessPiece* Piece, ATile* From, ATile* To)
 	//calculate the new location for the piece
 	FVector2D MoveCurrPieceTo = To->GetGridPosition();
 	FVector Location = ChessBoard->GetRelativeLocationByXYPosition(MoveCurrPieceTo.X, MoveCurrPieceTo.Y);
-	FVector NewLocation = Location + FVector(6, 6, 20);
+	FVector NewLocation = Location + FVector(6, 6, 30);
 
 	//actually move the piece
 	Piece->SetActorLocation(NewLocation);
