@@ -1,6 +1,6 @@
 # Chess_UE52
  
-Progetto del corso di PAA per l'anno accademico 2023/2024 (numero di matricola: 5341007).
+Progetto del corso di PAA per l'anno accademico 2023/2024.
 
 Sono state implementate come funzionalità aggiuntive la presa En Passant e lo Stalemate. 
 
