@@ -1,16 +1,12 @@
 # Chess_UE52
- 
-Progetto del corso di PAA per l'anno accademico 2023/2024.
 
-Sono state implementate come funzionalità aggiuntive la presa En Passant e lo Stalemate. 
+DAA course project for the academic year 2023/2024.
 
-Note sul progetto:
-- Per lo storico delle mosse è stata utilizzata la Long Algebraic Notation.
-- Quando è il proprio turno, si può selezionare il pezzo cliccando su di esso. Verrano così mostrate tutte le mosse possibili per quel pezzo. Per muovere, cliccare su una cella tra 
-  quelle suggerite. Per cambiare pezzo, cliccare nuovamente sul pezzo precedente per chiudere la visualizzazione delle sue mosse e selezionare il prossimo.
-- Cliccando sui bottoni presenti nello storico delle mosse, lo stato della scacchiera viene modificato ritornando alla configurazione in cui la mossa cliccata era l'ultima ad essere 
-  stata eseguita. Per poter riprendere la partita da quel punto (replay) muovere un pezzo se è il proprio turno. Nel caso in cui la mossa cliccata non fosse dell'avversario, non verrà 
-  data l'opportunità di muovere i pezzi. 
-- Se la partita termina con uno scacco matto, è possibile visualizzare le mosse cliccando su di esse, mentre non sarà più possibile tornare indietro e fare replay. Inoltre, cliccando
-  sul pulsante 'Restart' sarà possibile ricominciare a giocare. Se la partita termina con uno stallo, dopo 3 secondi verrà in automatico generata una nuova partita. 
+The following additional features have been implemented: **En Passant capture** and **Stalemate**.
+
+## Project Notes
+- **Long Algebraic Notation** was used for the move history.
+- When it is your turn, you can select a piece by clicking on it. All possible moves for that piece will be displayed. To move, click on one of the suggested squares. To change the selected piece, click again on the previously selected piece to close its move visualization and then select another one.
+- By clicking on the buttons in the move history, the state of the chessboard is modified, returning to the configuration in which the selected move was the last one executed. To resume the game from that point (replay), move a piece if it is your turn. If the selected move is not the opponent’s move, you will not be allowed to move any pieces.
+- If the game ends in **checkmate**, it is possible to view the moves by clicking on them, but it will no longer be possible to go back and replay the game. Additionally, by clicking the **Restart** button, a new game can be started. If the game ends in **stalemate**, a new game will be automatically generated after 3 seconds.
 
